@@ -1,0 +1,52 @@
+Left to do:
+
+- Add Javascript
+- Geolocation
+- Form Validation
+- Contact pages
+- Cat profile pages
+- make sign in and login pages images reponsive
+<!-- Title -->
+<div class="container">
+    <div class="title">
+        <h1>Catbook</h1>
+    </div>
+</div>
+
+<div class="container">
+    <div class="quote">
+        <h5>Catbook helps you share and connect with cats of different breeds.</h5>
+    </div>
+</div>
+
+
+
+
+<small class="text-wrap text-center" style="width: 17rem; font-family: 'Courier New', Courier, monospace;">Join to
+    connect with cats
+    of different
+    breeds.</small>
+
+
+signupForm.addEventListener('submit', (event) => {
+
+
+event.preventDefault();
+
+const fullName = document.getElementById("fullName").value;
+const date = document.getElementById("date").value;
+const address = document.getElementById("address").value;
+const phone = document.getElementById("phone").value;
+const email = document.getElementById("email").value;
+const password = document.getElementById("password").value;
+
+localStorage.setItem('FullName', fullName);
+localStorage.setItem('Date', date);
+localStorage.setItem('Address', address);
+localStorage.setItem('Phone', phone);
+localStorage.setItem('Email', email);
+localStorage.setItem('Password', password);
+
+alert('Sign up successful!');
+
+});
