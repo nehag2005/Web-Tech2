@@ -31,7 +31,7 @@ function timer() {
 
 
     // single digit num 
-    let addZeroes = num => num < 10 ? `0${num}` : num;
+    let Zeroes = num => num < 10 ? `0${num}` : num;
 
     if (eventTime < todayTime) {
         clearInterval(interval);
@@ -43,10 +43,10 @@ function timer() {
         let minutesRemaining = Math.floor((subtractedTime % oneHour) / oneMinute);
         let secondsRemaining = Math.floor((subtractedTime % oneMinute) / 1000);
 
-        day.textContent = addZeroes(daysRemaining);
-        hour.textContent = addZeroes(hoursRemaining);
-        minute.textContent = addZeroes(minutesRemaining);
-        second.textContent = addZeroes(secondsRemaining);   
+        day.textContent = Zeroes(daysRemaining);
+        hour.textContent = Zeroes(hoursRemaining);
+        minute.textContent = Zeroes(minutesRemaining);
+        second.textContent = Zeroes(secondsRemaining);   
 
     }
 

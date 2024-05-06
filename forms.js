@@ -7,8 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
     signupForm.addEventListener('submit', function(e) {
       e.preventDefault(); 
   
-  
-      // Get form data
       const userData = {
         name: document.getElementById('name').value,
         dateOfBirth: document.getElementById('date').value,
@@ -18,16 +16,14 @@ document.addEventListener('DOMContentLoaded', function() {
         password: document.getElementById('password').value
       };
   
-      // Save to local storage
+     
       localStorage.setItem('userData', JSON.stringify(userData));
-  
-      // Success Handling
       alert('You are now a Catbook member. Head to the login page! '); 
       
     });
   });
 
-//login 
+  //login 
 
   document.addEventListener('DOMContentLoaded', function() {
     const loginForm = document.querySelector('form[needs-validation]'); 
@@ -40,30 +36,29 @@ document.addEventListener('DOMContentLoaded', function() {
   
       const savedUserData = JSON.parse(localStorage.getItem('userData'));
   
-      // Login Validation
+      // Validation
       if (savedUserData && 
           savedUserData.email === enteredEmail &&
           savedUserData.password === enteredPassword) { 
   
           alert('Login Successful!');
-          // Redirect to home page
-          window.location.href = '../Nindex.html'; 
+          // home page
+          window.location.href = '../index.html'; 
   
       } else {
           alert('Invalid email or password'); 
       }
     });
   });
-  
 
-// logout 
+  // logout 
 
   document.addEventListener('DOMContentLoaded', function() { 
     const logoutButton = document.getElementById('logoutButton');
 
     logoutButton.addEventListener('click', function() {
         localStorage.removeItem('userData'); 
-        window.location.href = '../Nindex.html'; // Redirect to the home page
+        window.location.href = '../index.html'; //  home page
     });
 });
 
@@ -88,9 +83,7 @@ function loginStatus() {
     }
 }
 
-
 loginStatus(); 
-
 logoutButton.addEventListener('click', function() {
    
     loginStatus(); 

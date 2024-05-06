@@ -105,17 +105,25 @@ body {
   }
 }
 
+.formlink {
+  text-decoration: none;
+  color: #a528e8;
+  text-decoration: underline;
+}
+
+.formlink:hover {
+  color: #a528e8;
+}
+
 /* event countdown */
 
 .countdown {
-  width: 80vw;
+  width: 90vw;
+  max-width: 800px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   gap: 10px;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 70%;
-  left: 50%;
+  margin-top: 30px;
 }
 
 .box {
@@ -206,13 +214,14 @@ span.text {
   align-items: center;
   justify-content: center;
   min-height: 60vh;
+  padding-top: 100px;
 }
 
 .text-box {
   font-family: "Kanit", sans-serif;
   width: 80%;
   margin: 20px 0;
-  margin-top: -100px;
+  margin-top: 10px;
   font-size: 40px;
   padding: 20px;
   text-align: center;
@@ -248,7 +257,7 @@ span.text {
 
 .card-img-top img {
   object-fit: cover;
-  height: 100%; /* Fill the container's height */
+  height: 100%;
   width: 100%;
 }
 
@@ -257,6 +266,11 @@ span.text {
   color: #a528e8;
   font-weight: bold;
   text-decoration: underline;
+}
+
+.accor-links:hover {
+  text-decoration: none;
+  color: #a528e8;
 }
 
 .accordion-button:hover {
@@ -289,6 +303,11 @@ span.text {
   text-align: left;
 }
 
+.custom-color {
+  background-color: rgba(240, 240, 240, 0.823);
+  border-width: 5px;
+}
+
 /* Cat profiles */
 
 .cat-image {
@@ -298,4 +317,32 @@ span.text {
 
 .cat-title {
   margin-top: 10px;
+}
+
+/* Contact Us */
+
+#container {
+  width: 800px; /* Adjust as needed */
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  section#contact .row {
+    flex-direction: column-reverse;
+  }
+  section#contact .col-md-6 {
+    margin-bottom: 30px;
+  }
+  section#contact .img-fluid {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.contact-container {
+  /* Assuming this is the class of your container */
+  background-color: #f8f9fa; /* Or your preferred background color */
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid black; /* This adds the black outline */
 }

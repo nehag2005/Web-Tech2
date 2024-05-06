@@ -1,16 +1,17 @@
+const suggestions = document.getElementById('suggestions');
 const findBtn = document.getElementById('findBtn');
 const result = document.getElementById('results');
-const feedback = document.getElementById('feedback');
 
 findBtn.addEventListener('click', () => {
-  feedback.textContent = 'Searching for nearby booking offices...';
+  suggestions.textContent = 'Searching for booking offices near me...';
 
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(processUserLocation, handleLocationError);
   } else {
-    feedback.textContent = 'Geolocation is not supported by this browser.';
+    suggestions.textContent = 'Geolocation is not supported by this browser.';
   }
 });
+
 
 function processUserLocation(p) {
 
@@ -25,41 +26,44 @@ function processUserLocation(p) {
 }
 
   
-function getRandomDistance() {
-    const distanceKm = (Math.random() * 20) + 5; // Generate random distance between 5km and 25km
-    return distanceKm.toFixed(1); // Round to one decimal place 
+function randomDistance() {
+    const distances = [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+    const index = Math.floor(Math.random() * distances.length);
+    return distances[index]; 
 }
 
+
 function display(offices) {
-  feedback.textContent = ''; 
+  suggestions.textContent = ''; 
   if (offices.length > 0) {
-    result.innerHTML = offices.map(office => `
-      <div class="card mb-3">
+    result.innerHTML = offices.map(o => `
+      <div class="card mb-3 rounded custom-color">
         <div class="card-body">
-          <p class="card-text">${office.name}</p>
-          <p class="card-text">Distance: ${getRandomDistance()} km</p>  
+          <p class="card-text ">&#128205${o.name}</p>
+          <p class="card-text" >Distance: ${randomDistance()} km</p>  
           <p class="card-text">Opening Hours: 9:00 AM - 5:00 PM</p>  </div>
         </div>
       </div>
     `).join('');
   } else {
-    feedback.textContent = 'Sorry, no booking offices found nearby.';
+    suggestions.textContent = 'Sorry, no booking offices found nearby.';
   }
 }
 
+// w3schools - HTML Geolocation API
 function handleLocationError(error) {
     switch(error.code) {
       case error.PERMISSION_DENIED:
-        feedback.textContent = 'Error: You have denied location permission.';
+        suggestions.textContent = 'Error: You have denied location permission.';
         break;
       case error.POSITION_UNAVAILABLE:
-        feedback.textContent = 'Error: Location information is unavailable.';
+        suggestions.textContent = 'Error: Location information is unavailable.';
         break;
       case error.TIMEOUT:
-        feedback.textContent =  'Error: The request to get your location timed out.';
+        suggestions.textContent =  'Error: The request to get your location timed out.';
         break;
       default: 
-        feedback.textContent =  'Error: An unknown error occurred.';      
+        suggestions.textContent =  'Error: An unknown error occurred.';      
     }
   }
 
