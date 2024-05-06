@@ -4,42 +4,116 @@
 <head>
   <meta charset="UTF-8">
   <title>British Short Hair</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-  <!-- Navigation Bar -->
-  <nav>
-    <ul class="nav-list">
-      <li><a href="../Nindex.html">Home</a></li>
-      <li><a href="sf.html">Scottish Fold</a></li>
-      <li><a href="m.html">Munchkin</a></li>
-      <li><a href="bsh.html">British Short Hair</a></li>
-      <li><a href="b.html">Bengal</a></li>
-    </ul>
-  </nav>
+  <!-- navbar -->
 
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container">
 
-  <div id="sub-title"> British Short Hair </div>
+      <p class="Cat-logo"> &#128062 </p>
+      <a class="navbar-brand" href="../index.html">Catbook</a>
 
-  <!-- British Short hair description -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Links -->
+      <div class=" collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="sf.html">Scottish Fold</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="m.html">Munchkin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bsh.html">British Short Hair</a>
+          </li>
+          <li class="nav-item2">
+            <a class="nav-link" href="b.html">Bengal</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              2024 Event
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="event.html">Event countdown</a></li>
+              <li><a class="dropdown-item" href="eventdet.html">Event details</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="Nearestoffice.html">Nearest booking office </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
 
-  <div class="page-content">
-    <img id="image-pages" src="../images/British-short-hair2.0.jpeg" alt="British Short Hair">
-    <div id="body-text-pages">
+      </div>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item2">
+            <a class="nav-link btn btn-outline-light .btn-lg text-dark me-3" href="signup.html">Sign
+              Up</a>
+          </li>
+          <li class="nav-item2">
+            <a class="nav-link btn btn-outline-light .btn-lg text-dark me-3" href="login.html">Login</a>
+          </li>
+          <li class="nav-item2">
+            <a class="nav-link btn btn-outline-light text-dark me-3" href="contact.html">Contact Us</a>
+          </li>
+      </div>
 
-      Greetings! I am a British Shorthair, a dignified and charming breed of cat.
-      My breed's roots trace back to ancient Rome when I was brought to Britain by the Romans.
-      My rounded face, sturdy build, and dense coat are some of my most recognizable features.
-      I come in a wide array of colors and patterns, including blue, silver, black, and tabby, among others.
-      Overall, I am a delightful addition to any home, bringing elegance, affection, and a touch of British charm
-      wherever I go.
-
+      </ul>
     </div>
 
+  </nav>
+
+  <!-- British Short Hair -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="../images/British-short-hair2.0.jpeg" class="img-fluid img-thumbnail" alt="British Short Hair cat"
+          style="max-width: 90%;" class="cat-image">
+      </div>
+      <div class="col-md-6">
+        <h2 class="cat-title">British Short Hair</h2>
+        <!-- ChatGPT generated text -->
+        <p> Greetings, fellow cat enthusiasts! It's British Short Hair here, buzzing with excitement to share the news
+          about an extraordinary adventure awaiting us at Catbook – the "Purrfect Event"! Get ready to mark your
+          calendars because this is a gathering you won't want to miss.
+
+          As a British Short Hair with a penchant for adventure, I simply can't wait to dive headfirst into all the
+          feline fun that awaits. From interactive workshops on perfecting my purr to enlightening discussions on the
+          latest trends in catnip toys, there's no shortage of excitement in store for me at this event.
+
+
+          Furthermore, what truly sets the "Purrfect Event" apart is the remarkable journey we've embarked upon together
+          at
+          Catbook. It's a journey filled with laughter, learning, and heartfelt connections. Through the ups and downs,
+          we've forged bonds that transcend pixels, creating a vibrant community of British Short Hair cats like no
+          other.
+
+          So, as we prepare to embark on this new chapter of our Catbook journey, let's sharpen our claws, unleash our
+          inner explorers, and get ready to make memories that will last a lifetime. Together, we'll leave our paw
+          prints on the digital landscape of Catbook, weaving a tapestry of friendship and camaraderie that will endure
+          for years to come. See you there, my dear furry friends. Let's make this event one to remember! </p>
+      </div>
+    </div>
   </div>
 
 
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

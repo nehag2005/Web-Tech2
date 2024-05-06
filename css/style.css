@@ -1,118 +1,301 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
-  background: #d9a7c7;
-  background: -webkit-linear-gradient(to left, #fffcdc, #d9a7c7);
-  background: linear-gradient(to left, #fffcdc, #d9a7c7);
+  background: #e0aed0;
   height: 100vh;
   margin: 0;
 }
 
-img {
-  width: 200px;
-  border: 5px solid rgb(23, 22, 22);
+.navbar.bg-dark {
+  background-color: #be7ce1 !important;
 }
 
-#title {
-  color: rgb(255, 255, 255);
-  font-size: 50px;
-  font-family: "Kanit", sans-serif;
-  padding-top: 220px;
-  margin-left: 50px;
+.dropdown-menu {
+  background-color: #be7ce1 !important;
 }
 
-#body-text {
-  color: rgb(0, 0, 0);
-  font-family: "Kanit", sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  padding-top: 10px;
-  padding-bottom: 100px;
-  margin-left: 55px;
+.navbar {
+  margin-top: -50px;
+  margin-bottom: -10px;
 }
 
-.image-text {
-  color: rgb(0, 0, 0);
-  font-family: "Kanit", sans-serif;
-  font-size: 20px;
-  padding: 15px;
-}
-
-a {
-  text-decoration: none;
-}
-
-/* page 2, 3, 4, 5 */
-
-#sub-title {
-  color: rgb(255, 255, 255);
-  font-size: 40px;
-  font-family: "Kanit", sans-serif;
-  padding-top: 100px;
-  margin-left: 80px;
-}
-
-.page-content {
-  display: flex;
-  gap: 80px;
-}
-
-#body-text-pages {
-  color: rgb(0, 0, 0);
-  font-family: "Kanit", sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 80px;
-  margin-right: 50px;
-}
-
-#image-pages {
-  width: 300px;
-  margin-left: 180px;
-  margin-top: 80px;
-  flex: 0 0 auto;
-}
-
-/* Navigation Bar Styling - https://www.w3schools.com/css/css_navbar.asp */
-
-.nav-list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #ac87c5;
-}
-
-.nav-list li {
-  float: left;
-}
-
-.nav-list li a {
+.navbar-nav li a {
   display: block;
-  color: white;
+  color: white !important;
   font-size: large;
   font-weight: bold;
   font-family: "Kanit", sans-serif;
-  text-align: center;
-  padding: 14px 16px;
+}
+
+.navbar-nav li a:hover {
+  background-color: #e0aed0;
+}
+.nav-item2 {
+  margin: 0 5px;
+  margin-bottom: 10px;
+}
+
+.container {
+  font-family: "Kanit", sans-serif;
+}
+
+.custom-itm {
+  height: 800px;
+}
+
+.custom-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.8);
+}
+
+.Cat-logo {
+  font-size: xx-large;
+  padding-top: 20px;
+  margin-right: 10px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: x-large;
+  margin-top: -20px;
+  margin-bottom: -10px;
+}
+
+/* Carousel */
+
+.carousel-caption {
+  font-family: "Kanit", sans-serif;
+  margin-bottom: 20px;
+}
+
+.main-btn {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  width: 50%;
+}
+
+.main-btn:hover {
+  color: black;
   text-decoration: none;
 }
 
-.nav-list li a:hover {
-  background-color: #e0aed0;
+/* Sign Up and Login */
+.background {
+  font-family: "Poppins", sans-serif;
 }
 
-/* image flexbox */
+.box-area {
+  width: 930px;
+}
 
-.image-container {
+.right-box {
+  padding: 40px 30px 40px 40px;
+}
+
+::placeholder {
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+  .box-area {
+    margin: 0 10px;
+  }
+}
+
+/* event countdown */
+
+.countdown {
+  width: 80vw;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
-  margin-left: 110px;
+  gap: 10px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 70%;
+  left: 50%;
 }
 
-.image-container > * {
-  flex: 1;
+.box {
+  width: 28vmin;
+  height: 28vmin;
+  display: flex;
+  border: 1px solid black;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  font-size: 16px;
+  color: white;
+}
+
+.box:after {
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.12);
+  height: 100%;
+  width: 50%;
+  left: 0;
+}
+
+span.num {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 5em;
+  color: black;
+}
+
+span.text {
+  font-size: 1.2em;
+  background-color: black;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .countdown {
+    width: 85vw;
+  }
+  .box {
+    height: 26vmin;
+    width: 26vmin;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .countdown {
+    width: 90vw;
+    gap: 30px;
+  }
+
+  .box {
+    width: calc(50%-40px);
+    height: 30vmin;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .countdown {
+    gap: 15px;
+  }
+
+  .box {
+    width: 100%;
+    height: 25vmin;
+    font-size: 8px;
+  }
+
+  .span.text {
+    font-size: 1.5em;
+  }
+}
+
+.content-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+
+.text-box {
+  font-family: "Kanit", sans-serif;
+  width: 80%;
+  margin: 20px 0;
+  margin-top: -100px;
+  font-size: 40px;
+  padding: 20px;
+  text-align: center;
+}
+
+.event-det {
+  margin-top: 70px;
+}
+
+.event-det-link {
+  text-decoration: none;
+  width: 60%;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+}
+
+.event-det-link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .text-box {
+    width: 95%;
+    font-size: 30px;
+  }
+}
+
+/* event details */
+
+.card-img-top img {
+  object-fit: cover;
+  height: 100%; /* Fill the container's height */
+  width: 100%;
+}
+
+.accor-links {
+  text-decoration: none;
+  color: #a528e8;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.accordion-button:hover {
+  background-color: white;
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  background-color: white;
+  box-shadow: none;
+}
+
+.accordion-header h2 {
+  color: black;
+  font-family: "Kanit", sans-serif;
+}
+
+.accordion-button,
+.accordion-button:not(.collapsed) {
+  color: black;
+}
+
+/* Nearby locations */
+
+.container {
+  margin-top: 50px;
+}
+
+.card-text {
+  text-align: left;
+}
+
+/* Cat profiles */
+
+.cat-image {
+  width: 200px;
+  height: auto;
+}
+
+.cat-title {
+  margin-top: 10px;
 }

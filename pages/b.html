@@ -4,40 +4,115 @@
 <head>
   <meta charset="UTF-8">
   <title>Bengal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
-  <!-- Navigation Bar -->
-  <nav>
-    <ul class="nav-list">
-      <li><a href="../Nindex.html">Home</a></li>
-      <li><a href="sf.html">Scottish Fold</a></li>
-      <li><a href="m.html">Munchkin</a></li>
-      <li><a href="bsh.html">British Short Hair</a></li>
-      <li><a href="b.html">Bengal</a></li>
-    </ul>
+  <!-- navbar -->
+
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container">
+
+      <p class="Cat-logo"> &#128062 </p>
+      <a class="navbar-brand" href="../index.html">Catbook</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Links -->
+      <div class=" collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="sf.html">Scottish Fold</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="m.html">Munchkin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bsh.html">British Short Hair</a>
+          </li>
+          <li class="nav-item2">
+            <a class="nav-link" href="b.html">Bengal</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              2024 Event
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="event.html">Event countdown</a></li>
+              <li><a class="dropdown-item" href="eventdet.html">Event details</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="Nearestoffice.html">Nearest booking office </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+
+      </div>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item2">
+            <a class="nav-link btn btn-outline-light .btn-lg text-dark me-3" href="signup.html">Sign
+              Up</a>
+          </li>
+          <li class="nav-item2">
+            <a class="nav-link btn btn-outline-light .btn-lg text-dark me-3" href="login.html">Login</a>
+          </li>
+          <li class="nav-item2">
+            <a class="nav-link btn btn-outline-light text-dark me-3" href="contact.html">Contact Us</a>
+          </li>
+      </div>
+
+      </ul>
+    </div>
+
   </nav>
 
-  <div id="sub-title"> Bengal </div>
 
+  <!-- Bengal  -->
 
-  <!-- Bengal description -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="../images/Bengal2.0.jpeg" class="img-fluid img-thumbnail" alt="Bengal cat" class="cat-image"
+          style="max-width: 90%;">
+      </div>
+      <div class="col-md-6">
+        <h2 class="cat-title">Bengal</h2>
+        <!-- ChatGPT generated text -->
+        <p>Hey, fellow cat enthusiasts! Bengal here, bursting with excitement to tell you all about the upcoming
+          "Purrfect Event" at Catbook! That's right, mark your calendars and get those whiskers twitching because this
+          event is going to be the cat's meow!
 
-  <div class="page-content">
-    <img id="image-pages" src="../images/Bengal2.0.jpeg" alt="Bengal">
-    <div id="body-text-pages">
-      Hello! I'm a Bengal cat, a striking breed known for my exotic appearance and playful nature.
-      My breed's origins can be traced back to the 1960s when a domestic cat was bred with a wild Asian Leopard Cat.
-      I have a muscular build and a sleek body, perfect for agile movements and impressive leaps.
-      My coat comes in various colors, including brown, silver, and snow, each with its unique allure.
-      Overall, I'm a captivating companion for those who appreciate a touch of the wild combined with the warmth of a
-      loving pet.
+          Picture this: a gathering like no other, where cats from every corner of Leeds come together to
+          celebrate our shared love for all things feline. From the comfort of our own cozy corners, we'll embark on a
+          digital adventure filled with fun, friendship, and plenty of purrs.
+
+          At the "Purrfect Event," we'll dive into a treasure trove of feline delights. From interactive workshops on
+          grooming tips and tricks to lively discussions on the latest trends in catnip toys, there's something for
+          every cat's fancy.
+
+          But what truly sets the "Purrfect Event" apart is the sense of camaraderie that fills the air. It's a
+          purr-fect opportunity to connect with old friends, make new ones, and revel in the joy of being part of a
+          vibrant feline community.
+
+          So, get ready to unleash your inner cat-lete, sharpen those claws, and prepare for a paw-some time at the
+          event! Together, we'll make memories that will last a lifetime and leave our mark on the digital
+          realm of Catbook. See you there, my furry companions – let's make this event one to remember! 🐾</p>
+      </div>
     </div>
   </div>
 
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

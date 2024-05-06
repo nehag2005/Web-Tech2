@@ -1,11 +1,8 @@
 Left to do:
 
-- Add Javascript
-- Geolocation
-- Form Validation
+- beautify forms
 - Contact pages
 - Cat profile pages
-- make sign in and login pages images reponsive
 <!-- Title -->
 <div class="container">
     <div class="title">
@@ -50,3 +47,50 @@ localStorage.setItem('Password', password);
 alert('Sign up successful!');
 
 });
+
+
+You can book your place by visiting your nearest Catbook booking office. Find the office
+closest to your using our <a href="Nearestoffice.html">
+    Nearest Office </a> page. Remember to bring the tickets you are provided with by these
+offices!
+
+
+We want everyone to feel welcome and enjoy our cat-themed celebration! The venue has been
+selected with accessibility in mind, offering step-free entrances and accessible restroom
+facilities. If you have any specific accessibility needs or concerns, please reach out to us
+in advance through our <a href="contact.html">Contact Us</a> page. We'll do our best to
+accommodate your request so you can focus on the
+festivities and feline fun!
+
+
+ben:
+Hello! I'm a Bengal cat, a striking breed known for my exotic appearance and playful nature.
+My breed's origins can be traced back to the 1960s when a domestic cat was bred with a wild Asian Leopard Cat.
+I have a muscular build and a sleek body, perfect for agile movements and impressive leaps.
+My coat comes in various colors, including brown, silver, and snow, each with its unique allure.
+Overall, I'm a captivating companion for those who appreciate a touch of the wild combined with the warmth of a
+loving pet.
+
+Greetings! I am a British Shorthair, a dignified and charming breed of cat.
+My breed's roots trace back to ancient Rome when I was brought to Britain by the Romans.
+My rounded face, sturdy build, and dense coat are some of my most recognizable features.
+I come in a wide array of colors and patterns, including blue, silver, black, and tabby, among others.
+Overall, I am a delightful addition to any home, bringing elegance, affection, and a touch of British charm
+wherever I go.
+
+Hello there, I'm a Munchkin cat, a unique and adorable breed known for my short legs.
+The breed's origins can be traced back to Louisiana in the early 1990s, where a short-legged cat named Blackberry
+was found.
+My breed got its name from the Munchkin characters in 'The Wizard of Oz' due to our resemblance to them with our
+short stature.
+I come in a variety of colors and patterns, from solid colors to tabby and everything in between.
+Overall, I may be short in stature, but I'm big on personality and love, bringing joy and laughter to any home
+lucky enough to have me.
+
+Hello there! I'm a Scottish Fold, a unique and charming breed of cat.
+My distinctive feature is my folded ears, which give me an adorable and distinctive appearance.
+I come in a variety of colors and patterns, including tabby, solid, bicolor, and more.
+I owe my origins to a single barn cat named Susie, who lived on a farm in Scotland in the 1960s. She had the
+natural genetic mutation that caused her ears to fold forward.
+Overall, I'm a delightful addition to any home, bringing joy, companionship, and plenty of adorable antics to
+brighten your day.

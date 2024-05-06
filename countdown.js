@@ -1,3 +1,5 @@
+
+
 // Countdown timer
 
 let day = document.getElementById("days");
@@ -52,3 +54,4 @@ function timer() {
 
 let interval = setInterval(timer, 1000);
 timer();
+

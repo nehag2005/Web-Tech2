@@ -2,57 +2,136 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="../css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Catbook</title>
 </head>
 
 <body>
 
+    <!-- navbar -->
 
-    <!-- Navigation Bar -->
-    <nav>
-        <ul class="nav-list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="./pages/sf.html">Scottish Fold</a></li>
-            <li><a href="./pages/m.html">Munchkin</a></li>
-            <li><a href="./pages/bsh.html">British Short Hair</a></li>
-            <li><a href="./pages/b.html">Bengal</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+
+            <p class="Cat-logo"> &#128062 </p>
+            <a class="navbar-brand" href="Nindex.html">Catbook</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Links -->
+            <div class=" collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/sf.html">Scottish Fold</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/m.html">Munchkin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/bsh.html">British Short Hair</a>
+                    </li>
+                    <li class="nav-item2">
+                        <a class="nav-link" href="./pages/b.html">Bengal</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            2024 Event
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./pages/event.html">Event countdown</a></li>
+                            <li><a class="dropdown-item" href="./pages/eventdet.html">Event details</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="./pages/Nearestoffice.html">Nearest booking office </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item2">
+                        <a class="nav-link btn btn-outline-light .btn-lg text-dark me-3" href="./pages/signup.html">Sign
+                            Up</a>
+                    </li>
+                    <li class="nav-item2">
+                        <a class="nav-link btn btn-outline-light .btn-lg text-dark me-3"
+                            href="./pages/login.html">Login</a>
+                    </li>
+                    <li class="nav-item2">
+                        <a class="nav-link btn btn-outline-light .btn-lg text-dark me-3"
+                            href="./pages/contact.html">Contact
+                            Us</a>
+                    </li>
+                    <li class="nav-item2">
+                        <a class="nav-link btn btn-dark .btn-lg text-dark me-3" href="#" id="logoutButton">Logout</a>
+                    </li>
+            </div>
+
+            </ul>
+        </div>
+
     </nav>
 
+    <!-- Carousel -->
 
-    <div id="title"> Catbook </div>
-
-    <!-- cat emoji - https://www.w3schools.com/charsets/ref_emoji_smileys.asp -->
-    <div id="body-text"> Catbook helps you share and connect with cats of different breeds. </div>
-
-
-    <div class="image-container">
-        <!-- cat images linked to different webpages -->
-        <a href="./pages/sf.html">
-            <img class="image" src="./images/Scottish-Fold2.0.jpeg" alt="Scottish Fold">
-            <div class="image-text">Scottish Fold</div>
-        </a>
-
-        <a href="./pages/m.html">
-            <img class="image" src="./images/Munchkin.jpeg" alt="Munchkin">
-            <div class="image-text">Munchkin</div>
-        </a>
-
-        <a href="./pages/bsh.html">
-            <img class="image" src="./images/British-short-hair2.0.jpeg" alt="British Short Hair">
-            <div class="image-text">British Short Hair</div>
-        </a>
-
-        <a href="./pages/b.html">
-            <img class="image" src="./images/Bengal2.0.jpeg" alt="Bengal">
-            <div class="image-text">Bengal</div>
-        </a>
-
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-inner">
+            <div class="carousel-item active custom-itm">
+                <img src="./images/blueCat.avif" class="d-block w-100 custom-img" alt="White Cat">
+                <div class="carousel-caption">
+                    <h1 class="text-uppercase">Catbook</h1>
+                    <p>Catbook helps you share and connect with cats of different breeds.</p>
+                    <a class="btn btn-outline-light" href="./pages/event.html" role="button">The PURRFECT MEETUP 2024 -
+                        Leeds Cat Event</a>
+                </div>
+            </div>
+            <div class="carousel-item custom-itm">
+                <img src="./images/C3.jpg" class="d-block w-100 custom-img" alt="Grey Cat">
+                <div class="carousel-caption">
+                    <h1 class="text-uppercase">Catbook</h1>
+                    <p>Catbook helps you share and connect with cats of different breeds.</p>
+                    <a class="btn btn-outline-light" href="./pages/event.html" role="button">The PURRFECT MEETUP 2024 -
+                        Leeds Cat Event</a>
+                </div>
+            </div>
+            <div class="carousel-item custom-itm">
+                <img src="./images/white cat.avif" class="d-block w-100 custom-img" alt="White Cat">
+                <div class="carousel-caption">
+                    <h1 class="text-uppercase">Catbook</h1>
+                    <p>Catbook helps you share and connect with cats of different breeds.</p>
+                    <a class="btn btn-outline-light" href="./pages/event.html" role="button">The PURRFECT MEETUP 2024 -
+                        Leeds Cat Event</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="../forms.js"></script>
 </body>
 
 </html>
