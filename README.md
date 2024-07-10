@@ -6,3 +6,5 @@ Catbook is a website designed to showcase cat images, provide descriptions, and 
 
 ## Design Document Link 
 
+For a detailed explanation of the design choices for CSS styles, JavaScript features, and the responsiveness of the website, please refer to the design document.
+
