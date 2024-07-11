@@ -9,7 +9,7 @@ let second = document.getElementById("seconds");
 
 // Format - Date(yr, mon, day, hr, min)
 
-let eventDate = new Date(2024, 6, 6, 18, 30); // Sat Jul 06 2024 18:30:00
+let eventDate = new Date(2024, 9, 28, 18, 30); // Sep 28 2024 18:30:00
 let eventTime = eventDate.getTime();
 
 
